@@ -1,7 +1,20 @@
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
+
+/*controls what the links look like*/
+a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+/*Header portion*/
 .header{
     display: flex;
     flex-direction: column;
@@ -18,12 +31,6 @@ body{
     display: flex;
     gap: 18px; 
   }
-
-  a{
-    text-decoration: none;
-    color: white;
-    font-size: small;
-  }
   
   .ImageText{
     display:flex;
@@ -31,5 +38,39 @@ body{
   }
 
   .pugImage{
-    height: 300px;
+    height: 200px;
+  }
+
+  /*Content info*/
+  .content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 26px;
+  }
+
+  .content-images{
+    flex: 1;
+    align-self: center;
+  }
+
+  .quote{
+    flex: 1;
+    display: flex;
+    background-color: grey;
+    padding: 16px;
+  }
+  .q1{
+    justify-content: center;
+    align-items: center;
+  }
+  /*footer portion*/
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 44, 60);
+    color: white;
+    padding: 24px;
   }
