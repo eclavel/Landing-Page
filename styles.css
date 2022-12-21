@@ -4,7 +4,7 @@ body{
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    height: 100vh;
+    height: 200vh;
 }
 
 /*controls what the links look like*/
@@ -14,18 +14,33 @@ a{
     font-size: small;
 }
 
+/*signup button*/
+.signup{
+  background-color: #3882F6;
+  border-radius: 6px;
+  border: 1px solid whitesmoke;
+}
+.signup:hover{
+  background-color: olivedrab;
+}
+
 /*Header portion*/
 .header{
     display: flex;
     flex-direction: column;
-    background-color: rgb(44, 44, 60);
-    gap: 100px;
+    background-color: #1f2937;
+    gap: 30px;
     padding: 24px;
   }
   .top-header{
     display: flex;
     justify-content: space-around;
     
+  }
+  .logo{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
   }
   .links{
     display: flex;
@@ -38,7 +53,10 @@ a{
   }
 
   .pugImage{
-    height: 200px;
+    height: 150px;
+    width: 100;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
   }
 
   /*Content info*/
@@ -46,31 +64,81 @@ a{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 26px;
   }
 
   .content-images{
     flex: 1;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .info-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    gap: 150px;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 135px;
+    gap: 25px;
+  }
+  .info-image{
+    border-radius: 25px;
+    border: 4px solid blue;
+    height: 75%;
+  }
+  .images{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .text{
+    display: flex;
+    justify-content: center;
   }
 
   .quote{
     flex: 1;
     display: flex;
     background-color: grey;
-    padding: 16px;
-  }
-  .q1{
     justify-content: center;
     align-items: center;
   }
+
+  .bottom-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bottom-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    width: 650px;
+    background-color: #3882F6;
+    border-radius: 10px;
+  }
+
   /*footer portion*/
   .footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(44, 44, 60);
+    background-color: #1f2937;
     color: white;
     padding: 24px;
   }
