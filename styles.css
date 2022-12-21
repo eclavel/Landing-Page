@@ -1,10 +1,11 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  background-color: rgb(164, 5, 185);
 }
 
 /*controls what the links look like*/
